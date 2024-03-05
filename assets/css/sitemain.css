@@ -1109,6 +1109,13 @@ border-radius: 5px;
 # Top Universities
 --------------------------------------------------------------*/
 
+.top-uni{
+  position: relative;
+  width: 100%;
+  height: 600px;
+
+}
+
 .uni-square-container {
   display: flex;
   justify-content: space-between;
@@ -1212,64 +1219,6 @@ border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
-
-.card-bg {
-  color: black;
-  border-radius: 5px;
-}
-
-/* Section 2 */
-.section2 {
-  width: 1440px;
-  height: 783px;
-  background: rgba(76, 54, 126, 0.6);
-}
-
-.testimonial-box {
-  width: 395px;
-  height: 361px;
-  left: 100px;
-}
-
-.custom-row-gap {
-  --gap-size: 8%; 
-  display: flex;
-  flex-wrap: wrap;
-  margin: calc(var(--gap-size) / -2);
-}
-
-
-.card-bg .card-title,
-.card-bg .card-text {
-  color: rgb(0, 0, 0); 
-}
-
-.card-bg:hover .card-title,
-.card-bg:hover .card-text {
-  color: white; 
-}
-
-.custom-row-gap > .col {
-  padding: calc(var(--gap-size) / 2);
-}
-
-.orange-rectangle {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px; 
-  height: 7px; 
-  background-color: orange;
-  z-index: 1;
-  border-radius: 22px;
-}
-
-.card-bg:hover .orange-rectangle {
-  background-color: white; 
-  color:rgb(0, 0, 0);
-}
-
 
 
 
@@ -1601,7 +1550,14 @@ border-radius: 5px;
 
 
 
+.stars {
+  display: flex;
+  color: gold;
+}
 
+.star {
+  font-size: 24px;
+}
 
 @media (max-width:767px) {
   .testimonials-clean h2 {
@@ -1610,7 +1566,6 @@ border-radius: 5px;
     font-size:24px;
   }
 }
-
 
 .testimonials-clean .people {
   padding:50px 0 20px;
@@ -1627,9 +1582,21 @@ border-radius: 5px;
 }
 
 .testimonials-clean .item .box {
-  padding:30px;
+  width: 375px;
+  height: 300px;
+  padding:40px;
   background-color:#fff;
   position:relative;
+  border-radius: 15px;
+}
+
+.testimonials-clean .item .testimonial-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px; 
+  height: 80px; 
+  margin-right: 20px;
 }
 
 .testimonials-clean .item .box:after {
@@ -1639,14 +1606,16 @@ border-radius: 5px;
   bottom:-24px;
   width:0;
   height:0;
-  border:15px solid transparent;
+  border:19px solid transparent;
   border-width:12px 15px;
   border-top-color:#fff;
+
 }
 
 .testimonials-clean .item .author {
   margin-top:28px;
-  padding-left:25px;
+  padding-left:35px;
+  color: #fff;
 }
 
 .testimonials-clean .item .name {
@@ -1656,18 +1625,20 @@ border-radius: 5px;
 }
 
 .testimonials-clean .item .title {
-  font-size:13px;
+  font-size:10px;
   color:#9da9ae;
 }
 
 .testimonials-clean .item .description {
-  font-size:15px;
+  margin-top: 3px;
+  font-size:13px;
   margin-bottom:0;
 }
 
 .testimonials-clean .item img {
-  max-width:40px;
+  width: 60px;
+  height: 60px;
   float:left;
-  margin-right:12px;
+  margin-right:15px;
   margin-top:-5px;
 }
